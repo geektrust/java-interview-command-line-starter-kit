@@ -24,13 +24,13 @@
   <target name="compile" depends="init"
     description="compile the source">
     <!-- Compile the Java code from ${src} into ${build} -->
-    <javac srcdir="${src}" destdir="${build}" includeantruntime="false" />
+    <javac debug="true" srcdir="${src}" destdir="${build}" includeantruntime="false" />
   </target>
 
   <target name="compile-test" depends="init"
     description="compile the test source">
     <!-- Compile the Java test code from ${src} into ${build} -->
-    <javac srcdir="${src-test}" destdir="${build-test}" classpathref="test.classpath"
+    <javac debug="true" srcdir="${src-test}" destdir="${build-test}" classpathref="test.classpath"
       includeantruntime="false" />
   </target>
 
