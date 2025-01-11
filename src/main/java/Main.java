@@ -30,9 +30,10 @@ public class Main{
     private static void handle(String input) {
         String[] inputListForOneCommand = input.trim().split(" ");
         String command = inputListForOneCommand[0]; //This value will hold the command name each time it is called.
-        System.out.println(command); //Will print the command
+        System.out.println(command); //Will print the command Ex: "PLACE_ORDER" or "TOTAL_COST"
+
         String arg1 = inputListForOneCommand[1]; //This value will hold the first argument value each time it is called. There can be N number of such arguments based on the problem statement. You need to fetch that in a similar fashion based on the problem statement.
-        System.out.println(arg1); //Will print the first argument to the command
+        System.out.println(arg1); //Will print the first argument to the command Ex: "101"
         
         /*
          * Implementation of the solution should begin after this. Please make sure you convert the variables into appropriate data types required for the solutioning. 
